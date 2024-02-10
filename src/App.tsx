@@ -15,7 +15,7 @@ function App() {
         <HillsFooter />
       </div>
       <div>
-        <h1>We're launching soon</h1>
+        <h1 className='titleMessage'>We're launching soon</h1>
         <CountdownTimer targetDate={dateTimeAfterEIghtDays} />
         <SocialButtons />
 
