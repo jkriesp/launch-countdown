@@ -10,15 +10,15 @@ function App() {
   const dateTimeAfterEIghtDays = NOW_IN_MS + EIGHT_DAYS_IN_MS;
   return (
     <>
-    <div id='background-wrapper'>
-      <div id='stars'></div>
-      <HillsFooter />
-    </div>
+      <div id='background-wrapper'>
+        <div id='stars'></div>
+        <HillsFooter />
+      </div>
       <div>
         <h1>We're launching soon</h1>
         <CountdownTimer targetDate={dateTimeAfterEIghtDays} />
         <SocialButtons />
-        
+
       </div>
 
 
