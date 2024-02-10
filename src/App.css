@@ -43,25 +43,36 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 23%;
   /* Adjust as needed */
   background-image: url('src/assets/pattern-hills.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom center;
+
 }
 
+#root .mainContainer {
+  width: 100%;
+	max-width: 290px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
 .titleMessage {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  line-height: 1.4;
+  width: 90%;
 }
 
 .show-counter {
   margin-top: 65px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -69,17 +80,17 @@
 .countdown {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
 
 }
 
 .numberCard {
-  font-size: 3rem;
+  font-size: 2.5rem;
   background-color: var(--very-dark-black-blue);
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   display: flex;
   flex-direction: column; /* Changed to column to stack top and bottom */
   justify-content: center;
@@ -88,7 +99,7 @@
   overflow: hidden; /* Ensure the halves don't overflow the card */
   border-radius: 5px 5px 5px 5px;
   box-shadow: 0 6px 0px 0 rgba(0, 0, 0, 0.2);
-  margin: 11px;
+  margin: 8px;
   margin-bottom: 1px;
 }
 
@@ -122,9 +133,9 @@
   position: absolute;
   bottom: -5px;
   left: -5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
 
 }
 
@@ -135,9 +146,9 @@
   position: absolute;
   bottom: -5px;
   right: -5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
 
 }
 
@@ -155,9 +166,9 @@
   position: absolute;
   top: -5px;
   left: -5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
 
 }
 
@@ -168,9 +179,9 @@
   position: absolute;
   top: -5px;
   right: -5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
 
 }
 
@@ -184,10 +195,54 @@
 
 
 .socialButtons {
-  display: flex;
-  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 100px;
+  
+}
+
+.socialButton {
+  border: none;
+  padding: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.socialButton:hover {
+  color: var(--soft-red);
+}
+
+/* Tablet devices (e.g., 768px and up) */
+@media (min-width: 768px) {
+  .numberCard {
+    font-size: 2.5rem;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .titleMessage {
+    width: 100%;
+  }
+}
+
+/* Desktop devices (e.g., 1024px and up) */
+@media (min-width: 1440px) {
+  .mainContainer {
+    width: 80%;
+    max-width: 500px; /* Adjust as needed */
+  }
+
+  .numberCard {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .titleMessage {
+    width: 100%;
+  }
 }

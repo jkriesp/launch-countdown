@@ -14,7 +14,7 @@ function App() {
         <div id='stars'></div>
         <HillsFooter />
       </div>
-      <div>
+      <div className='mainContainer'>
         <h1 className='titleMessage'>We're launching soon</h1>
         <CountdownTimer targetDate={dateTimeAfterEIghtDays} />
         <SocialButtons />
