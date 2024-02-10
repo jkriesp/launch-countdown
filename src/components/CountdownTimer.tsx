@@ -18,11 +18,11 @@ const ShowCounter = ({ days, hours, minutes, seconds }: ShowCounterProps) => {
     <div className="show-counter">
 
       <CountdownDisplay value={days} type={'Days'} />
-      <p>:</p>
+
       <CountdownDisplay value={hours} type={'Hours'} />
-      <p>:</p>
+
       <CountdownDisplay value={minutes} type={'Mins'} />
-      <p>:</p>
+
       <CountdownDisplay value={seconds} type={'Seconds'} />
 
     </div>
@@ -31,7 +31,6 @@ const ShowCounter = ({ days, hours, minutes, seconds }: ShowCounterProps) => {
 
 const CountdownTimer = ({ targetDate }: CountdownTimerProps ) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
-  console.log(seconds)
 
   if (days + hours + minutes + seconds <= 0) {
     console.log("We're out of time.");
