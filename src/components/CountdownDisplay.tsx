@@ -4,8 +4,8 @@ interface CounterDisplayProps {
 }
 
 const CountdownDisplay = ({ value, type }: CounterDisplayProps) => {
-  const topValue = value; // This could be adjusted to show the next value for animation
-  const bottomValue = value; // todo: top and bottom values for animation
+  // const topValue = value; // This could be adjusted to show the next value for animation
+  // const bottomValue = value; // todo: top and bottom values for animation
   const formattedValue = formatNumber(value); // formatt values so that they are always 2 digits long
 
   function formatNumber(number: number) {
