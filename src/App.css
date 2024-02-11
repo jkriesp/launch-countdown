@@ -212,8 +212,13 @@
   cursor: pointer;
 }
 
-.socialButton:hover {
-  color: var(--soft-red);
+svg {
+  fill: var(--grayish-blue);
+}
+
+.socialButton svg:hover  {
+  fill: var(--soft-red);
+
 }
 
 /* Tablet devices (e.g., 768px and up) */
