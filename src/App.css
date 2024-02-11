@@ -90,7 +90,7 @@
   font-size: 2.5rem;
   background-color: var(--very-dark-black-blue);
   width: 70px;
-  height: 70px;
+  height: 65px;
   display: flex;
   flex-direction: column; /* Changed to column to stack top and bottom */
   justify-content: center;
@@ -106,6 +106,7 @@
 .number{
   color: var(--soft-red);
   z-index: 1;
+  font-size: 36px;
 }
 
 .half {
@@ -226,7 +227,7 @@ svg {
   .numberCard {
     font-size: 2.5rem;
     width: 90px;
-    height: 90px;
+    height: 85px;
   }
   
   .titleMessage {
@@ -244,7 +245,7 @@ svg {
   .numberCard {
     font-size: 3rem;
     width: 100px;
-    height: 100px;
+    height: 95px;
   }
   
   .titleMessage {
