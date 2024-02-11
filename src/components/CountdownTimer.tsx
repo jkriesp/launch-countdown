@@ -21,7 +21,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }: ShowCounterProps) => {
 
       <CountdownDisplay value={hours} type={'Hours'} />
 
-      <CountdownDisplay value={minutes} type={'Mins'} />
+      <CountdownDisplay value={minutes} type={'Minutes'} />
 
       <CountdownDisplay value={seconds} type={'Seconds'} />
 
